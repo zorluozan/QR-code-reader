@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aquamarine;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+.no-scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-area {
+  padding: 0 0 1.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.qr-area img {
+  width: 100%;
+}
+
+.qr-title {
+  font-size: 1.6rem;
+  margin-top: 5.2rem;
+  color: #000;
+}
+
+.qr-code-container {
+  position: fixed;
+  inset: 0;
+  height: 300px;
+  width: 300px;
+  display: none;
+  margin: auto;
+  background-color: transparent;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+}
+
+.close-btn img {
+  max-width: 100%;
+  height: auto;
+}
+
+#reader video {
+  width: 100% !important;
+  height: 100% !important;
+}
